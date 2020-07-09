@@ -1,0 +1,24 @@
+[package]
+name = "s_lf"
+version = "0.0.1-dev"
+authors = ["ember alrynx <ember@lunar.town>"]
+edition = "2018"
+description = "an exocortex for one"
+license = "Apache-2.0 OR MIT"
+keywords = ["moxie", "app", "notes", "cli", "web"]
+homepage = "https://ember.software/s_lf"
+repository = "https://github.com/emberian/s_lf"
+categories = ["command-line-utilities"]
+
+[dependencies]
+anyhow = "*"
+url = {version = "*", features = ["serde"] }
+vcard = "*"
+serde_derive = "*"
+webpage = "*"
+serde = "*"
+argh = "*"
+mime = "*"
+chrono ={version = "*", features = ["serde"] }
+erased-serde = "*"
+uuid = "*"
