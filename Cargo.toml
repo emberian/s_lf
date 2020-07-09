@@ -11,9 +11,9 @@ repository = "https://github.com/emberian/s_lf"
 categories = ["command-line-utilities"]
 
 [dependencies]
-anyhow = "*"
+eyre = "*"
 url = {version = "*", features = ["serde"] }
-vcard = "*"
+vobject = "*"
 serde_derive = "*"
 webpage = "*"
 serde = "*"
@@ -21,4 +21,15 @@ argh = "*"
 mime = "*"
 chrono ={version = "*", features = ["serde"] }
 erased-serde = "*"
-uuid = "*"
+uuid = { version = "*", features = ["serde"] }
+serde_bytes = "*"
+serde_json = "*"
+reqwest = { version = "*", features = ["json"] }
+tokio = {version  ="*", features = [ "full" ] }
+tui = {version = "*", default-features = false, features = ["crossterm"] }
+crossterm = "*"
+linefeed = "*"
+json-patch = "*"
+
+[dependencies.serde_with]
+version = "1.5.0-alpha.1"
